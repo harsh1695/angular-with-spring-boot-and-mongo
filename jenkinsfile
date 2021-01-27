@@ -1,0 +1,9 @@
+node{
+   stage('scm checkout'){
+     git 'https://github.com/ChallaHarish/angular-with-spring-boot-and-mongo.git'
+     }
+     stage('compile-package'){
+       sh 'mvn package'
+     }
+     
+}
